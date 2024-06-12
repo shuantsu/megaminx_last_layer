@@ -57,6 +57,14 @@
 </head>
 <body>
 
+    <script>
+        if (window.location.href != 'http://127.0.0.1:3000/') {
+            const b = document.createElement('base');
+            b.href = '/megaminx_last_layer/';
+            document.head.appendChild(b);
+        }
+    </script>
+
     <section id="s1">
         <div>
             <twisty-player
@@ -77,7 +85,7 @@
     </section>
 
     <section id="s2" style="border-top:4px solid grey;">
-        <iframe src="/algs.html"></iframe>
+        <iframe src="algs.html"></iframe>
     </section>
 
     <script type="module">
