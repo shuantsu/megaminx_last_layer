@@ -319,7 +319,8 @@
             "24": {
                 "name": "E2",
                 "a": [
-                    "(x') (R U' R' DR R U R' DR' R U R' DR R U' R' DR')",
+                    "Rv' (R U' R' FR R U R' FR' R U R' FR R U' R' FR') Rv", // changed
+					"(x') (R U' R' DR R U R' DR' R U R' DR R U' R' DR')",
                     "(y') (R2 U R' U' y R U R' U' R U R' U' R U R' F U' F2')",
                     "(y') (BR' R' U2 R U' R' U R' U2' R U R' U R U' R U' BR)"
                 ],
@@ -436,7 +437,8 @@
             "40": {
                 "name": "H1+",
                 "a": [
-                    "(R' DR' R U R' DR R U)x3",
+                    "(R' FR' R U R' FR R U)3", // changed
+					"(R' DR' R U R' DR R U)x3",
                     "(R U2 R' U2 R U' R' U' R U2 R' U R' F' R U R U' R' F)"
                 ],
                 "s": "R U2 R2 U2 R U' R U R U' R U R2 U2' R2' U2' R' U' R2 U' R2'"
@@ -444,6 +446,7 @@
             "41": {
                 "name": "H1-",
                 "a": [
+					"(R' FR' R U' R' FR R U')3", // changed
                     "(R' DR' R U' R' DR R U')x3",
                     "(F' R U R' U' R' F R U' R U2' R' U R U R' U2' R U2' R')"
                 ],
@@ -474,7 +477,8 @@
             "45": {
                 "name": "I1-",
                 "a": [
-                    "(R2 U2' R2' U' R2 bR2' U R2' U' R2 U' bR2 U' R2')",
+                    "(R2 U2' R2' U' R2 BR2' U R2' U' R2 U' BR2 U' R2')",//changed
+					"(R2 U2' R2' U' R2 bR2' U R2' U' R2 U' bR2 U' R2')",
                     "(y2') (BR' R2' U2' R2 U R2' U R2 BR R U R' U R U2' R')"
                 ],
                 "s": "R U2' R U2' R U2' R2' U2' R2' U2 R' U' R2 U' R' U' R2' U' R'"
@@ -490,7 +494,8 @@
             "47": {
                 "name": "I2-",
                 "a": [
-                    "(R2 U bR2' U R2' U R2 U' bR2 R2' U R2 U2 R2')",
+                    "(R2 U BR2' U R2' U R2 U' BR2 R2' U R2 U2 R2')", //changed
+					"(R2 U bR2' U R2' U R2 U' bR2 R2' U R2 U2 R2')",
                     "(y2) (R U2 R' U' R U' R' BR' R2' U' R2 U' R2' U2 R2 BR)"
                 ],
                 "s": "R U R2 U R U R2' U R U2' R2 U2 R2 U2 R' U2 R' U2 R'"
@@ -544,7 +549,8 @@
             "54": {
                 "name": "I6+",
                 "a": [
-                    "x' (R2 U2' R2' F' R2 U2 R2' F2 R2 U2' R2' F' R2 U2 R2')",
+                    "Rv' (R2 U2' R2' F' R2 U2 R2' F2 R2 U2' R2' F' R2 U2 R2') Rv",//changed
+					"x' (R2 U2' R2' F' R2 U2 R2' F2 R2 U2' R2' F' R2 U2 R2')",
                     "y2' (F R U2 R' U' R U' R' F' U R' U' R U2' R' U R U R' U R)"
                 ],
                 "s": "R U' R' U2 R U2 R' U2' R' U2' R2 U R U2' R2 U2' R2' U' R2'"
@@ -1079,7 +1085,8 @@
             "125": {
                 "name": "V1+",
                 "a": [
-                    "(R' U2 R' dR' R U' R' dR R U R U' R' U' R)"
+                    "(R' U2 R' FR' R U' R' FR R U R U' R' U' R)",//changed
+					"(R' U2 R' dR' R U' R' dR R U R U' R' U' R)"
                 ],
                 "s": "R' U2' R U' R U R' U2 R U2 R' U2 R' U2' R"
             },
@@ -1094,7 +1101,8 @@
             "127": {
                 "name": "V2+",
                 "a": [
-                    "(R' U R U R' U' R' dR' R U R' dR R U2' R)"
+                    "(R' U R U R' U' R' FR' R U R' FR R U2' R)",//changed
+					"(R' U R U R' U' R' dR' R U R' dR R U2' R)"
                 ],
                 "s": "R2 U2' R2' U2' R2' U R2' U R2 U2' R' U' R' U2 R'"
             },
