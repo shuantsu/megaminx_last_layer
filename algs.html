@@ -8,12 +8,16 @@
     
     
     <style>
+
         body {
-            background:  rgb(104, 156, 139);
+            background:  rgb(104, 133, 156);
             margin: 0;
             display: flex;
             flex-direction: column;
             gap: 20px;
+        }
+        .alg {
+            zoom: 1;
         }
         legend {
             font-size: x-large;
@@ -28,6 +32,25 @@
         }
         .alg-group {
             display: block;
+        }
+        .alg {
+            cursor: pointer;
+        }
+        button {
+            cursor: pointer;
+            &:hover {
+                background: rgb(99, 151, 175);
+                color: white;
+            }
+            &:active {
+                transform: scale(.95);
+            }
+        }
+        input, button {
+            box-shadow: inset 1px 1px 3px rgba(0,0,0,.3);
+            border: 0;
+            border-radius: 12px;
+            padding: 6px;
         }
         .alg-group-content {
             display: flex;
@@ -88,7 +111,12 @@
             box-shadow: -2px -2px 5px rgba(0,0,0,.4);
         }
         nav {
-            background: black;
+            background: rgb(43, 43, 43);
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
         }
         nav, main {
             padding: 20px;
@@ -102,6 +130,16 @@
                 font-family: sans-serif;
                 color: white;
                 text-shadow: 1px 1px 1px black;
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: 1200px) {
+            
+            body {
+                zoom: .8;
+            }
+            .alg {
+                zoom: .8;
             }
         }
     </style>
