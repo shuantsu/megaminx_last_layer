@@ -80,6 +80,7 @@
         <div>
             <button id="bt-btn">Connect bluetooth</button> <br/><br/>
             <input id="apply-alg-input"/><button id="apply-alg-btn">Load Case</button><button id="reset-btn">Reset</button>
+			<button onclick='const algs_ = document.querySelector("iframe").contentWindow.document.querySelectorAll(".alg");algs_[Math.floor(Math.random()*algs_.length)].click()'>Pick Random Case</button>
         </div>
 
     </section>
